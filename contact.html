@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<script>
+    const abar = document.getElementById('bar');
+    const anav = document.getElementById('navbar');
+    const close = document.getElementById('close');
+
+    if (abar) {
+        abar.addEventListener('click', () => {
+            anav.classList.add('active');
+        })
+    }
+
+    if (close) {
+        close.addEventListener('click', () => {
+            anav.classList.remove('active');
+        })
+    }
+</script>
+<body>
+    
+    <section id="header">
+        <div id="logo">
+            <a href="#"><img src="240658807_131692455861283_7195435849864079620_n.png" class="logo-img" alt="">
+                <span>Messy</span>
+            </a>
+        </div>
+        <div id="nav">
+            <ul id="navbar">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li id="bag"><a href="kart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-regular fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="kart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+            
+            
+        </div>
+    </section>
+    
+    <section id="body">
+        <div class="contact-section">
+            <div class="contact-form">
+                <div id="title">
+                    <h2>Get In Touch With Us!</h2>
+                    <span>Fill out the form below to recieve a free and confidential.</span>
+                </div>
+                
+                <form class="contact" action="" method="">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="email" class="text-box" id="email" placeholder="Your Email" required>
+                    <textarea name="message" row="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" name="submit" id="sent-btn" value="Send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
